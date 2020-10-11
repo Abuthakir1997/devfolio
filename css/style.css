@@ -42,6 +42,7 @@ header nav ul li .active::after{
 header nav ul li .active:hover::after{
     animation: none;
 }
+
 @keyframes animateborder{
     0%{
         width: 0px;
@@ -67,6 +68,14 @@ header h1 a{
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
+    background-attachment: fixed;
+    position: relative;
+}
+#banner .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
 }
 #banner .jumbotron h1 {
     color:white;
@@ -191,7 +200,7 @@ position: relative;
     height: 100%;
     top: 0;
     left: 0;
-    background: #3084E1;
+    background:#0458B6;
     opacity: 0.6;
 }
 #overlay-section i{
@@ -278,8 +287,8 @@ position: relative;
     height: 100%;
     top: 0;
     left: 0;
-    background: #3084E1;
-    opacity: 0.7;
+    background: #0458B6;
+    opacity: 0.6;
     z-index: 100;
 }
 #slider #carouselExampleIndicators{
@@ -355,7 +364,8 @@ footer{
 }
 footer .overlay{
     position: absolute;
-    background: rgba(76,156,240,0.5);
+    background: #3084E1;
+    opacity: .6;
     top: 0;
     z-index: 0;
     left: 0;

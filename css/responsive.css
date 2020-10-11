@@ -1,0 +1,40 @@
+/* media queries */
+
+@media (max-width:1024px){
+    #slider .sub-title{
+        padding: 0 18rem;
+    }
+    #blog .center-content{
+        display: none;
+    }
+}
+
+
+@media (max-width:768px){
+
+#slider .sub-title{
+    padding: 0;
+}
+#about .details{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+}
+
+@media (max-width:575px){
+    footer .container{
+        max-width: 500px;
+    }
+    #about .details{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #overlay-section {
+        background-position: bottom;
+        background-attachment: unset;
+    }
+    #slider{
+        background-attachment: unset;
+    }
+}
