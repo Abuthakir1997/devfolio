@@ -12,7 +12,19 @@ header {
     background: #000;
 }
 header .fixed-top{
+    /* position: absolute; */
+    padding: 0 10rem;
+    transition: all 0.8s;
+}
+header .sticky {
     position: absolute;
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 5rem;
+    transition: all 0.8s;
+}
+header header nav .nav-tweak{
+    color: #007bff;
 }
 header nav ul li{
     position: relative;
@@ -61,6 +73,9 @@ header h1 a{
 }
 .underline a{
     color:#fff;
+}
+.nav-tweak a{
+    color: #0078FF;
 }
 #banner{
     background: url(../images//intro-bg.jpg);
