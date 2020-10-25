@@ -1,10 +1,12 @@
+var jumbotronTweak = document.querySelector(".jumbotrons");
+const lead = document.querySelector(".lead-1");
 window.addEventListener("scroll", function () {
     var navbar = document.querySelector(".navbar");
     var sticky = document.querySelector(".sticky");
     var logo = document.querySelector(".logo");
     var underline = document.querySelector(".underline");
     var navbarBrand = document.querySelector(".navbar-brand");
-    var jumbotronTweak = document.querySelector(".jumbotrons");
+
 
 
     if (window.scrollY > 0) {
@@ -29,6 +31,27 @@ window.addEventListener("scroll", function () {
     }
 
 });
+
+lead.addEventListener("mouseenter", (e) => {
+    // let Xaxis = (window.innerWidth / 2 - e.pageX) / 25;
+    // let Yaxis = (window.innerHeight / 2 - e.pageY) / 25;
+    lead.textContent = "iam abu";
+    lead.style.transform = "rotateY(360deg) rotateX(0deg)";
+    lead.style.transition = "2s";
+
+});
+
+lead.addEventListener("mouseout", (e) => {
+    // let Xaxis = (window.innerWidth / 2 - e.pageX) / 25;
+    // let Yaxis = (window.innerHeight / 2 - e.pageY) / 25;
+    // jumbotronTweak.style.transform = "rotatex(0deg)";
+    lead.textContent = "web developer";
+    lead.style.transform = "rotateY(0deg) rotateX(0deg)";
+    lead.style.transition = "2s";
+
+});
+
+
 
 
 
