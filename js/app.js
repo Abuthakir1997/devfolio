@@ -33,8 +33,6 @@ window.addEventListener("scroll", function () {
 });
 
 lead.addEventListener("mouseenter", (e) => {
-    // let Xaxis = (window.innerWidth / 2 - e.pageX) / 25;
-    // let Yaxis = (window.innerHeight / 2 - e.pageY) / 25;
     lead.textContent = "iam abu";
     lead.style.transform = "rotateY(360deg) rotateX(0deg)";
     lead.style.transition = "2s";
@@ -42,9 +40,7 @@ lead.addEventListener("mouseenter", (e) => {
 });
 
 lead.addEventListener("mouseout", (e) => {
-    // let Xaxis = (window.innerWidth / 2 - e.pageX) / 25;
-    // let Yaxis = (window.innerHeight / 2 - e.pageY) / 25;
-    // jumbotronTweak.style.transform = "rotatex(0deg)";
+
     lead.textContent = "web developer";
     lead.style.transform = "rotateY(0deg) rotateX(0deg)";
     lead.style.transition = "2s";
