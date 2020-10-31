@@ -1,5 +1,6 @@
 var jumbotronTweak = document.querySelector(".jumbotrons");
 const lead = document.querySelector(".lead-1");
+
 window.addEventListener("scroll", function () {
     var navbar = document.querySelector(".navbar");
     var sticky = document.querySelector(".sticky");
@@ -34,7 +35,7 @@ window.addEventListener("scroll", function () {
 
 lead.addEventListener("mouseenter", (e) => {
     lead.textContent = "iam abu";
-    lead.style.transform = "rotateY(360deg) rotateX(0deg)";
+    lead.style.transform = "rotateY(360deg) rotateX(0deg) skewX(5deg) skewY(5deg)";
     lead.style.transition = "2s";
 
 });
@@ -42,11 +43,16 @@ lead.addEventListener("mouseenter", (e) => {
 lead.addEventListener("mouseout", (e) => {
 
     lead.textContent = "web developer";
-    lead.style.transform = "rotateY(0deg) rotateX(0deg)";
+    lead.style.transform = "rotateY(0deg) rotateX(0deg) skewX(0deg) skewY(0deg)";
     lead.style.transition = "2s";
 
 });
 
+var logo = document.querySelector(".logo");
+
+logo.addEventListener("click", (e) => {
+    logo.classList.toggle("logos");
+})
 
 
 

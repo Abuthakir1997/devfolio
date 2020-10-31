@@ -378,6 +378,7 @@ position: relative;
     left: 50%;
     font-size: .7rem;
     transform: translate(-58%, -50%);
+    display: none;
 }
 footer{
     margin-top: 65px;
@@ -440,5 +441,10 @@ footer .footer-details button:hover{
     color: #fff;
 
 
+}
+
+
+#blog .col-12{
+    margin: 0;
 }
 
